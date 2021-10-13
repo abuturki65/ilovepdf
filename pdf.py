@@ -30,23 +30,19 @@ def strt(message):
 	try:
 		bot.send_chat_action(message.chat.id, "typing")
 		strtMsg = f'''
-Hey [{message.from_user.first_name}](tg://user?id={message.chat.id})..!! This bot will helps you to do many things with pdf's 🥳
+Hey [{message.from_user.first_name}](tg://user?id={message.chat.id})..!! This bot for students of psau University, the health track
 
 Some of the main features are:
 ◍ `Convert images to PDF`
 ◍ `Convert PDF to images`
 ◍ `Convert files to pdf`
 
-OwNeD By: @nabilanavab 😜
-Update Channel: @nabiIanavab 🤩
+Owned By: @hsb31t
 
-Join @nabiIanavab, for bot updates ♥️
-
-[Source Code 🏆](https://github.com/nabilanavab/ilovepdf)
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+[about me](https://abuturki.aba.vg)
 '''
 		key = types.InlineKeyboardMarkup()
-		key.add(types.InlineKeyboardButton("Source Code ❤️", callback_data="strtDevEdt"),types.InlineKeyboardButton("Explore More 🥳", callback_data="imgsToPdfEdit"))
+		key.add(types.InlineKeyboardButton("DEV", callback_data="strtDevEdt"),types.InlineKeyboardButton("Explore More", callback_data="imgsToPdfEdit"))
 		bot.send_message(message.chat.id, strtMsg, disable_web_page_preview=True, reply_markup=key)
 	
 		
@@ -59,15 +55,10 @@ Join @nabiIanavab, for bot updates ♥️
 				try:
 					aboutDev = f'''About Dev:
 
-OwNeD By: @nabilanavab 😜
-Update Channel: @nabiIanavab 😇
-
+Owned By: @hsb31t
 Lang Used: Python🐍
-[Source Code](https://github.com/nabilanavab/ilovepdf)
 
-Join @nabiIanavab , if you ❤ this 
-
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+[about me](https://abuturki.aba.vg)
 '''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 Home 🏡", callback_data="back"))
@@ -82,21 +73,21 @@ Join @nabiIanavab , if you ❤ this
 					expMsg = f'''
 Images to pdf :
 
-		Just Send/forward me some images. When you are finished; use /generate to get your pdf..😉
+		Just Send/forward me some images. When you are finished; use /generate to get your pdf..
 
- ◍ Image Sequence will be considered 🤓
- ◍ For better quality pdfs(send images without Compression) 🤧
+ ◍ Image Sequence will be considered
+ ◍ For better quality pdfs(send images without Compression) 
  
- ◍ `/cancel` - Delete's the current Queue 😒
- ◍ `/id` - to get your telegram ID 🤫
+ ◍ `/cancel` - Delete's the current Queue
+ ◍ `/id` - to get your telegram ID
  
  ◍ RENAME YOUR PDF:
  
-	- By default, your telegram ID will be treated as your pdf name..🙂
-	- `/generate fileName` - to change pdf name to fileName🤞
+	- By default, your telegram ID will be treated as your pdf name..
+	- `/generate fileName` - to change pdf name to fileName
 	- `/generate name` - to get pdf with your telegram name
 
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)'''
+[about me](https://abuturki.aba.vg)'''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 Home 🏡", callback_data="back"),types.InlineKeyboardButton("PDF to images ➡️", callback_data="pdfToImgsEdit"))
 					bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = expMsg, disable_web_page_preview=True, reply_markup=key)
@@ -112,18 +103,18 @@ PDF to images:
 
 		Just Send/forward me a pdf file.
 
- ◍ I will Convert it to images ✌️
- ◍ if Multiple pages in pdf(send as albums) 😌
- ◍ Page numbers are sequentially ordered 😬
- ◍ Send images faster than anyother bots 😋
+ ◍ I will Convert it to images
+ ◍ if Multiple pages in pdf(send as albums)
+ ◍ Page numbers are sequentially ordered
+ ◍ Send images faster than anyother bots
  
 1st bot on telegram wich send images without converting entire pdf to images
 
 ⚠️ Due to overload this bot will only convert files less than 10mb files..⚠️
 
-if you need to convert 10mb+ you can create your own bot.. Source code is mentioned in bio 😇
+if you need to convert 10mb+ you can create your own bot..
 
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)'''
+[about me](https://abuturki.aba.vg)'''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 Imgs To Pdf", callback_data="imgsToPdfEdit"),types.InlineKeyboardButton("Home 🏡", callback_data="back"),types.InlineKeyboardButton("file to Pdf ➡️", callback_data="filsToPdfEdit"))
 					bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = expMsg, disable_web_page_preview=True, reply_markup=key)
@@ -137,19 +128,19 @@ if you need to convert 10mb+ you can create your own bot.. Source code is mentio
 					expMsg = f'''
 Files to PDF:
 
-		Just Send/forward me a Supported file.. I will convert it to pdf and send it to you..😎
+		Just Send/forward me a Supported file.. I will convert it to pdf and send it to you..
 
-◍ Supported files(.epub, .xps, .oxps, .cbz, .fb2) 😁
-◍ No need to specify your telegram file extension 🙄
-◍ Only Images & ASCII characters Supported 😪
+◍ Supported files(.epub, .xps, .oxps, .cbz, .fb2) 
+◍ No need to specify your telegram file extension 
+◍ Only Images & ASCII characters Supported 
 ◍ added 30+ new file formats that can be converted to pdf..
-API LIMITS..😕
+API LIMITS..
 
 ⚠️ Due to overload this bot will only convert files less than 10mb files..⚠️
 
-if you need to convert 10mb+ you can create your own bot.. Source code is mentioned in bio 😇
+if you need to convert 10mb+ you can create your own bot..
 
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)'''
+[about me](https://abuturki.aba.vg)'''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 PDF to imgs", callback_data="imgsToPdfEdit"),types.InlineKeyboardButton("Home 🏡", callback_data="back"),types.InlineKeyboardButton("WARNING ⚠️", callback_data="warningEdit"))
 					bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = expMsg, disable_web_page_preview=True, reply_markup=key)
@@ -163,13 +154,13 @@ if you need to convert 10mb+ you can create your own bot.. Source code is mentio
 					expMsg = f'''
 WARNING MESSAGE ⚠️:
 
-◍ This bot is completely free to use so please dont spam here 🙏
+◍ This bot is completely free to use so please dont spam here
 
-◍ Please don't try to spread 18+ contents 😒
+◍ Please don't try to spread 18+ contents
 
-IF THERE IS ANY KIND OF REPORTING, BUGS, REQUESTS, AND SUGGESTIONS PLEASE CONTACT @nabilanavab
+IF THERE IS ANY KIND OF REPORTING, BUGS, REQUESTS, AND SUGGESTIONS PLEASE CONTACT @hsb31t
 
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+[about me](https://abuturki.aba.vg)
 '''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 WARNING ⚠️", callback_data="warningEdit"),types.InlineKeyboardButton("Home 🏡", callback_data="back"))
@@ -182,22 +173,18 @@ IF THERE IS ANY KIND OF REPORTING, BUGS, REQUESTS, AND SUGGESTIONS PLEASE CONTAC
 				
 				try:
 					strtMsg = f'''
-Hey..!! This bot will helps you to do many things with pdf's 🥳
+Hey..!! This bot will helps you to do many things with pdf's
 
 Some of the main features are:
 ◍ `Convert images to PDF`
 ◍ `Convert PDF to images`
 ◍ `Convert files to pdf`
 
-OwNeD By: @nabilanavab 😜
-Update Channel: @nabiIanavab 🤩
-
-Join @nabiIanavab, if you ♥️ this bot
-
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+OwNeD By: @nabilanavab
+[about me](https://abuturki.aba.vg)
 '''
 					key = types.InlineKeyboardMarkup()
-					key.add(types.InlineKeyboardButton("Source Code ❤️", callback_data="strtDevEdt"),types.InlineKeyboardButton("Explore More 🥳", callback_data="imgsToPdfEdit"))
+					key.add(types.InlineKeyboardButton("DEV", callback_data="strtDevEdt"),types.InlineKeyboardButton("Explore More ", callback_data="imgsToPdfEdit"))
 					bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = strtMsg, disable_web_page_preview=True, reply_markup=key)
 				
 				except:
@@ -222,9 +209,9 @@ Help message:
 
  ◍ Hit on /start to get the welcome message
 
- ◍ Then Use `Explore more 🥳` button for more help 🙏🥴
+ ◍ Then Use `Explore more ` button for more help 
  
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+[about me](https://abuturki.aba.vg)
 '''
 		key = types.InlineKeyboardMarkup()
 		key.add(types.InlineKeyboardButton("Close ⌛", callback_data="close"))
@@ -246,7 +233,7 @@ Help message:
 def feedback(message):
 	bot.send_chat_action(message.chat.id, "typing")
 	feedbackMsg = f'''
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+[about me](https://abuturki.aba.vg)
 '''
 	bot.send_message(message.chat.id, feedbackMsg, disable_web_page_preview=True)
 
@@ -274,9 +261,9 @@ def pic(message):
 			new_file.write(downloaded_file)
 		img = Image.open(f'./{message.chat.id}/imgs/{message.chat.id}.jpg').convert("RGB")
 		PDF[message.chat.id].append(img)
-		bot.edit_message_text(chat_id= message.chat.id, text = f'''`Added {len(PDF[message.chat.id])} page/'s to your pdf..`🤓
+		bot.edit_message_text(chat_id= message.chat.id, text = f'''`Added {len(PDF[message.chat.id])} page/'s to your pdf..`
 
-/generate to generate PDF 🤞''', message_id = picMsgId.message_id)
+/generate to generate PDF''', message_id = picMsgId.message_id)
 	
 	except:
 		pass
@@ -298,7 +285,7 @@ def fls(message):
 			
 			try:
 				bot.send_chat_action(message.chat.id, "typing")
-				unSuprtd = bot.send_message(message.chat.id, f'''`please Send me a file less than 10mb Size`😪
+				unSuprtd = bot.send_message(message.chat.id, f'''`please Send me a file less than 10mb Size`
 
 Or Create pdf bot your Own.. link in bio''')
 				sleep(15)
@@ -324,13 +311,13 @@ Or Create pdf bot your Own.. link in bio''')
 				
 				img = Image.open(f'./{message.chat.id}/imgs/{message.chat.id}{isPdfOrImg}').convert("RGB")
 				PDF[message.chat.id].append(img)
-				bot.edit_message_text(chat_id= message.chat.id, text = f'''`Added {len(PDF[message.chat.id])} page/'s to your pdf..`🤓
+				bot.edit_message_text(chat_id= message.chat.id, text = f'''`Added {len(PDF[message.chat.id])} page/'s to your pdf..`
 
-/generate to generate PDF 🤞''', message_id = picMsgId.message_id)
+/generate to generate PDF''', message_id = picMsgId.message_id)
 				
 			except Exception as e:
 				
-				bot.edit_message_text(chat_id = message.chat.id, text = f'''Something went wrong..😐
+				bot.edit_message_text(chat_id = message.chat.id, text = f'''Something went wrong..
 
 `ERROR: {e}`''', message_id = picMsgId.message_id)
 				sleep(5)
@@ -409,26 +396,26 @@ Or Create pdf bot your Own.. link in bio''')
 					bot.send_media_group(message.chat.id, media[message.chat.id])
 					del media[message.chat.id]
 					
-				bot.edit_message_text(chat_id = message.chat.id, text = f'`Uploading Completed.. 💛`', message_id = pdfMsgId.message_id)
+				bot.edit_message_text(chat_id = message.chat.id, text = f'`Uploading Completed.. `', message_id = pdfMsgId.message_id)
 				
 				shutil.rmtree(f'./{message.message_id}pdf{message.chat.id}')
 				
 				sleep(10)
 				bot.send_chat_action(message.chat.id, "typing")
 				feedbackMsg = f'''
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+[about me](https://abuturki.aba.vg)
 '''
 				bot.send_message(message.chat.id, feedbackMsg, disable_web_page_preview=True)
 				
 				os.remove(f'./{message.message_id}pdf{message.chat.id}/pdf.pdf')
-				bot.edit_message_text(chat_id = message.chat.id, text = f'`started Uploading..💜`', message_id = pdfMsgId.message_id)
+				bot.edit_message_text(chat_id = message.chat.id, text = f'`started Uploading..`', message_id = pdfMsgId.message_id)
 				
 			except Exception as e:
 				
 				try:
 					shutil.rmtree(f'./{message.message_id}pdf{message.chat.id}')
 					
-					bot.edit_message_text(chat_id = message.chat.id, text = f'''Something went wrong..😐
+					bot.edit_message_text(chat_id = message.chat.id, text = f'''Something went wrong..
 
 `ERROR: {e}`''', message_id = pdfMsgId.message_id)
 					
@@ -452,24 +439,24 @@ Or Create pdf bot your Own.. link in bio''')
 				with open(f'./{message.message_id}pdf{message.chat.id}/{isPdfOrImg}', 'wb') as new_file:
 					new_file.write(downloaded_file)
 				
-				bot.edit_message_text(chat_id = message.chat.id, text = f'Creating pdf..💛', message_id = pdfMsgId.message_id)
+				bot.edit_message_text(chat_id = message.chat.id, text = f'Creating pdf..', message_id = pdfMsgId.message_id)
 				Document = fitz.open(f'./{message.message_id}pdf{message.chat.id}/{isPdfOrImg}')
 				b = Document.convert_to_pdf()
 				pdf = fitz.open("pdf", b)
 				pdf.save(f'./{message.message_id}pdf{message.chat.id}/{fileNm}.pdf', garbage=4, deflate=True)
 				pdf.close()
-				bot.edit_message_text(chat_id = message.chat.id, text = f'Started Uploading..💚', message_id = pdfMsgId.message_id)
+				bot.edit_message_text(chat_id = message.chat.id, text = f'Started Uploading..', message_id = pdfMsgId.message_id)
 				
 				sendfile = open(f'./{message.message_id}pdf{message.chat.id}/{fileNm}.pdf','rb')
 				bot.send_document(message.chat.id, sendfile, caption = f'` Converted: {fileExt} to pdf`')
-				bot.edit_message_text(chat_id = message.chat.id, text = f'Uploading Completed..❤️', message_id = pdfMsgId.message_id)
+				bot.edit_message_text(chat_id = message.chat.id, text = f'Uploading Completed..', message_id = pdfMsgId.message_id)
 				
 				shutil.rmtree(f'./{message.message_id}pdf{message.chat.id}')
 
 				sleep(10)
 				bot.send_chat_action(message.chat.id, "typing")
 				feedbackMsg = f'''
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+[about me](https://abuturki.aba.vg)
 '''
 				bot.send_message(message.chat.id, feedbackMsg, disable_web_page_preview=True)
 		
@@ -477,7 +464,7 @@ Or Create pdf bot your Own.. link in bio''')
 				
 				try:
 					shutil.rmtree(f'./{message.message_id}pdf{message.chat.id}')
-					bot.edit_message_text(chat_id = message.chat.id, text = f'''Something went wrong..😐
+					bot.edit_message_text(chat_id = message.chat.id, text = f'''Something went wrong..
 
 `ERROR: {e}`''', message_id = pdfMsgId.message_id)
 					
@@ -510,9 +497,9 @@ Or Create pdf bot your Own.. link in bio''')
 					with open(f'./{message.message_id}pdf{message.chat.id}/{isPdfOrImg}', 'wb') as new_file:
 						new_file.write(downloaded_file)
 					
-					bot.edit_message_text(chat_id = message.chat.id, text = f'Creating pdf..💛', message_id = pdfMsgId.message_id)
+					bot.edit_message_text(chat_id = message.chat.id, text = f'Creating pdf..', message_id = pdfMsgId.message_id)
 					convertapi.convert('pdf', {'File': f'./{message.message_id}pdf{message.chat.id}/{isPdfOrImg}'}, from_format = fileExt[1:]).save_files(f'./{message.message_id}pdf{message.chat.id}/{fileNm}.pdf')
-					bot.edit_message_text(chat_id = message.chat.id, text = f'Uploading Completed..❤️', message_id = pdfMsgId.message_id)
+					bot.edit_message_text(chat_id = message.chat.id, text = f'Uploading Completed..', message_id = pdfMsgId.message_id)
 					sendfile = open(f'./{message.message_id}pdf{message.chat.id}/{fileNm}.pdf','rb')
 					bot.send_document(message.chat.id, sendfile, caption = f'` Converted: {fileExt} to pdf`')
 					
@@ -521,7 +508,7 @@ Or Create pdf bot your Own.. link in bio''')
 					sleep(10)
 					bot.send_chat_action(message.chat.id, "typing")
 					feedbackMsg = f'''
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+[about me](https://abuturki.aba.vg)
 '''
 					bot.send_message(message.chat.id, feedbackMsg, disable_web_page_preview=True)
 				
@@ -538,7 +525,7 @@ Or Create pdf bot your Own.. link in bio''')
 			
 			try:
 				bot.send_chat_action(message.chat.id, "typing")
-				unSuprtd = bot.send_message(message.chat.id, f'''`unsupported file..🙄`''')
+				unSuprtd = bot.send_message(message.chat.id, f'''`unsupported file..`''')
 				sleep(15)
 				bot.delete_message(chat_id = message.chat.id, message_id = message.message_id)
 				bot.delete_message(chat_id = message.chat.id, message_id = unSuprtd.message_id)
@@ -554,7 +541,7 @@ def delQueue(message):
 	try:
 		bot.send_chat_action(message.chat.id, "typing")
 		shutil.rmtree(f'./{message.chat.id}')
-		bot.reply_to(message, "`Queue deleted Successfully..`🤧")
+		bot.reply_to(message, "`Queue deleted Successfully..`")
 		
 		try:
 			del PDF[message.chat.id]
@@ -562,7 +549,7 @@ def delQueue(message):
 			pass
 		
 	except:
-		bot.reply_to(message, "`No Queue founded`😲")
+		bot.reply_to(message, "`No Queue founded`")
 	
 @bot.message_handler(commands=["generate"])
 def generate(message):
@@ -576,13 +563,13 @@ def generate(message):
 			del PDF[message.chat.id]
 		
 		if not images:
-			ntFnded = bot.reply_to(message, "`No image founded.!!`😒")
+			ntFnded = bot.reply_to(message, "`No image founded.!!`")
 			sleep(5)
 			bot.delete_message(chat_id = message.chat.id, message_id = message.message_id)
 			bot.delete_message(chat_id = message.chat.id, message_id = ntFnded.message_id)
 			return
 		
-		gnrtMsgId = bot.send_message(message.chat.id, f'`Generating pdf..💚`')
+		gnrtMsgId = bot.send_message(message.chat.id, f'`Generating pdf..`')
 		
 		if newName == f" name":
 			fileName = f"{message.from_user.first_name}" + ".pdf"
@@ -598,19 +585,19 @@ def generate(message):
 		
 		path = os.path.join(f'./{message.chat.id}', fileName)
 		images[0].save(path, save_all=True, append_images=images[1:])
-		bot.edit_message_text(chat_id= message.chat.id, text = f'`Uploading pdf...❤️`', message_id = gnrtMsgId.message_id)
+		bot.edit_message_text(chat_id= message.chat.id, text = f'`Uploading pdf...`', message_id = gnrtMsgId.message_id)
 		bot.send_chat_action(message.chat.id, "upload_document")
 		
 		sendfile = open(path,'rb')
 		bot.send_document(message.chat.id, sendfile, caption = f'file Name: `{fileName}`\n\n`Total pg\'s: {pgnmbr}`')
-		bot.edit_message_text(chat_id= message.chat.id, text = f'`Successfully Uploaded 🤫`', message_id = gnrtMsgId.message_id)
+		bot.edit_message_text(chat_id= message.chat.id, text = f'`Successfully Uploaded `', message_id = gnrtMsgId.message_id)
 		
 		shutil.rmtree(f'./{message.chat.id}')
 		
 		sleep(10)
 		bot.send_chat_action(message.chat.id, "typing")
 		feedbackMsg = f'''
-[Write a feedback 📋](https://t.me/nabilanavabchannel/17?comment=10)
+[about me](https://abuturki.aba.vg)
 '''
 		bot.send_message(message.chat.id, feedbackMsg, disable_web_page_preview=True)
 	
@@ -622,7 +609,7 @@ def unSuprtd(message):
 	
 	try:
 		bot.send_chat_action(message.chat.id, "typing")
-		unSuprtd = bot.send_message(message.chat.id, f'`unsupported file.. please send me an image..😬`')
+		unSuprtd = bot.send_message(message.chat.id, f'`unsupported file.. please send me an image..`')
 		sleep(5)
 		bot.delete_message(chat_id = message.chat.id, message_id = message.message_id)
 		bot.delete_message(chat_id = message.chat.id, message_id = unSuprtd.message_id)
