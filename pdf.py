@@ -180,7 +180,7 @@ Some of the main features are:
 ◍ `Convert PDF to images`
 ◍ `Convert files to pdf`
 
-OwNeD By: @nabilanavab
+Owned By: @hsb31t
 [about me](https://abuturki.aba.vg)
 '''
 					key = types.InlineKeyboardMarkup()
