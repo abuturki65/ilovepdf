@@ -37,9 +37,9 @@ Some of the main features are:
 ◍ `Convert PDF to images`
 ◍ `Convert files to pdf`
 
-Owned By: @hsb31t
+Owned By: @PROTECTmnbot
 
-[about me](https://abuturki.aba.vg)
+[about me](https://api.abuturki.me)
 '''
 		key = types.InlineKeyboardMarkup()
 		key.add(types.InlineKeyboardButton("DEV", callback_data="strtDevEdt"),types.InlineKeyboardButton("Explore More", callback_data="imgsToPdfEdit"))
@@ -55,10 +55,10 @@ Owned By: @hsb31t
 				try:
 					aboutDev = f'''About Dev:
 
-Owned By: @hsb31t
+Owned By: @PROTECTmnbot
 Lang Used: Python🐍
 
-[about me](https://abuturki.aba.vg)
+[about me](https://api.abuturki.me)
 '''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 Home 🏡", callback_data="back"))
@@ -87,7 +87,7 @@ Images to pdf :
 	- `/generate fileName` - to change pdf name to fileName
 	- `/generate name` - to get pdf with your telegram name
 
-[about me](https://abuturki.aba.vg)'''
+[about me](https://api.abuturki.me)'''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 Home 🏡", callback_data="back"),types.InlineKeyboardButton("PDF to images ➡️", callback_data="pdfToImgsEdit"))
 					bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = expMsg, disable_web_page_preview=True, reply_markup=key)
@@ -114,7 +114,7 @@ PDF to images:
 
 if you need to convert 10mb+ you can create your own bot..
 
-[about me](https://abuturki.aba.vg)'''
+[about me](https://api.abuturki.me)'''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 Imgs To Pdf", callback_data="imgsToPdfEdit"),types.InlineKeyboardButton("Home 🏡", callback_data="back"),types.InlineKeyboardButton("file to Pdf ➡️", callback_data="filsToPdfEdit"))
 					bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = expMsg, disable_web_page_preview=True, reply_markup=key)
@@ -140,7 +140,7 @@ API LIMITS..
 
 if you need to convert 10mb+ you can create your own bot..
 
-[about me](https://abuturki.aba.vg)'''
+[about me](https://api.abuturki.me)'''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 PDF to imgs", callback_data="imgsToPdfEdit"),types.InlineKeyboardButton("Home 🏡", callback_data="back"),types.InlineKeyboardButton("WARNING ⚠️", callback_data="warningEdit"))
 					bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = expMsg, disable_web_page_preview=True, reply_markup=key)
@@ -160,7 +160,7 @@ WARNING MESSAGE ⚠️:
 
 IF THERE IS ANY KIND OF REPORTING, BUGS, REQUESTS, AND SUGGESTIONS PLEASE CONTACT @hsb31t
 
-[about me](https://abuturki.aba.vg)
+[about me](https://api.abuturki.me)
 '''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("🔙 WARNING ⚠️", callback_data="warningEdit"),types.InlineKeyboardButton("Home 🏡", callback_data="back"))
@@ -180,8 +180,8 @@ Some of the main features are:
 ◍ `Convert PDF to images`
 ◍ `Convert files to pdf`
 
-Owned By: @hsb31t
-[about me](https://abuturki.aba.vg)
+Owned By: @PROTECTmnbot
+[about me](https://api.abuturki.me)
 '''
 					key = types.InlineKeyboardMarkup()
 					key.add(types.InlineKeyboardButton("DEV", callback_data="strtDevEdt"),types.InlineKeyboardButton("Explore More ", callback_data="imgsToPdfEdit"))
@@ -211,7 +211,7 @@ Help message:
 
  ◍ Then Use `Explore more ` button for more help 
  
-[about me](https://abuturki.aba.vg)
+[about me](https://api.abuturki.me)
 '''
 		key = types.InlineKeyboardMarkup()
 		key.add(types.InlineKeyboardButton("Close ⌛", callback_data="close"))
@@ -233,7 +233,7 @@ Help message:
 def feedback(message):
 	bot.send_chat_action(message.chat.id, "typing")
 	feedbackMsg = f'''
-[about me](https://abuturki.aba.vg)
+[about me](https://api.abuturki.me)
 '''
 	bot.send_message(message.chat.id, feedbackMsg, disable_web_page_preview=True)
 
@@ -287,7 +287,7 @@ def fls(message):
 				bot.send_chat_action(message.chat.id, "typing")
 				unSuprtd = bot.send_message(message.chat.id, f'''`please Send me a file less than 10mb Size`
 
-Or Create pdf bot your Own.. link in bio''')
+Or Create pdf bot your Own..''')
 				sleep(15)
 				bot.delete_message(chat_id = message.chat.id, message_id = message.message_id)
 				bot.delete_message(chat_id = message.chat.id, message_id = unSuprtd.message_id)
@@ -456,7 +456,7 @@ Or Create pdf bot your Own.. link in bio''')
 				sleep(10)
 				bot.send_chat_action(message.chat.id, "typing")
 				feedbackMsg = f'''
-[about me](https://abuturki.aba.vg)
+[about me](https://api.abuturki.me)
 '''
 				bot.send_message(message.chat.id, feedbackMsg, disable_web_page_preview=True)
 		
